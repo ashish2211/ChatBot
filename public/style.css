@@ -1,0 +1,45 @@
+h1{
+    /* border: 1px solid black; */
+
+    margin: auto;
+    text-align: center;
+}
+
+#input_fields{
+    border: 1px solid yellow;
+    position: absolute;
+    bottom: 0;
+    width: 500px;
+}
+
+#main{
+    position: absolute;
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#msg_box{
+    /* border: 1px solid green; */
+    height: 470px;
+    width: 495px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+#text_field{
+
+    bottom: 0;
+    width: 85%;
+}
+
+#send_btn{
+
+    float: right;
+    bottom: 0;
+    right: 0;
+    width: 15%;
+}
