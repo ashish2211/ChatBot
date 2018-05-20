@@ -78,8 +78,10 @@ function createBotMsg(inside, msg){
     innerDiv.style.border = "1px solid black";
     // innerDiv.style.height = "20px";
     innerDiv.style.display = "inline-block";
-
+    innerDiv.style.backgroundColor = "#23323B";
+    innerDiv.style.color = "white";
     innerDiv.style.borderRadius = "5px";
+    innerDiv.style.padding = "5px";
     innerDiv.innerHTML = msg;
     document.getElementById(inside).appendChild(div);
     document.getElementById(div.id).appendChild(innerDiv);
@@ -99,6 +101,9 @@ function createUserMsg(inside, msg){
     // innerDiv.style.height = "20px";
     innerDiv.style.display = "inline-block";
     innerDiv.style.borderRadius = "5px";
+    innerDiv.style.backgroundColor = "#23323B";
+    innerDiv.style.color = "white";
+    innerDiv.style.padding = "5px";
     innerDiv.innerHTML = msg;
     div.style.textAlign = "right";
     document.getElementById(inside).appendChild(div);

@@ -1,12 +1,19 @@
-h1{
-    /* border: 1px solid black; */
+body{
+    /* background-image: url("images/background-large.jpg"); */
+    background-color: #23323B;
+    font-family: 'Montserrat', sans-serif;
+}
 
+p{
+    /* border: 1px solid black; */
+    font-size: 50px;
     margin: auto;
     text-align: center;
+    color: white;
 }
 
 #input_fields{
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     position: absolute;
     bottom: 0;
     width: 500px;
@@ -14,12 +21,14 @@ h1{
 
 #main{
     position: absolute;
-    border: 1px solid black;
+    /* border: 1px solid white; */
+    border-radius: 10px;
     width: 500px;
     height: 500px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    background-color: white;
 }
 
 #msg_box{
@@ -31,15 +40,18 @@ h1{
 }
 
 #text_field{
-
+    font-family: 'Montserrat', sans-serif;
     bottom: 0;
     width: 85%;
 }
 
 #send_btn{
-
+    text-align: center;
+    cursor: pointer;
     float: right;
     bottom: 0;
     right: 0;
-    width: 15%;
+    width: 14%;
+    border-bottom-right-radius: 10px;
+    border: 1px solid black;
 }
