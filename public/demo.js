@@ -1,5 +1,3 @@
-console.log("heheh");
-
 
 // Craete a Rivescript object.
 var bot = new RiveScript();
@@ -80,7 +78,7 @@ function createBotMsg(inside, msg){
     innerDiv.style.border = "1px solid black";
     // innerDiv.style.height = "20px";
     innerDiv.style.display = "inline-block";
-    
+
     innerDiv.style.borderRadius = "5px";
     innerDiv.innerHTML = msg;
     document.getElementById(inside).appendChild(div);
