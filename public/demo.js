@@ -75,10 +75,10 @@ function createBotMsg(inside, msg){
     // div.style.height = "25px";
     div.style.margin = "5px";
     var innerDiv = document.createElement("div");
-    innerDiv.style.border = "1px solid black";
+  //  innerDiv.style.border = "1px solid black";
     // innerDiv.style.height = "20px";
     innerDiv.style.display = "inline-block";
-    innerDiv.style.backgroundColor = "#23323B";
+    innerDiv.style.backgroundColor = "#3498db";
     innerDiv.style.color = "white";
     innerDiv.style.borderRadius = "5px";
     innerDiv.style.padding = "5px";
@@ -101,7 +101,7 @@ function createUserMsg(inside, msg){
     // innerDiv.style.height = "20px";
     innerDiv.style.display = "inline-block";
     innerDiv.style.borderRadius = "5px";
-    innerDiv.style.backgroundColor = "#23323B";
+    innerDiv.style.backgroundColor = "#3498db";
     innerDiv.style.color = "white";
     innerDiv.style.padding = "5px";
     innerDiv.innerHTML = msg;
