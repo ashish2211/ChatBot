@@ -93,17 +93,17 @@ function createUserMsg(inside, msg){
     // Create a reply in the chat box.
     var div = document.createElement("div");
     div.id = "msg_sent_" + date.getTime().toString();
-    div.style.margin = "5px";
+  //  div.style.margin = "0px";
     // div.style.border = "1px solid red";
-    // div.style.height = "25px";
+  // div.style.height = "25px";
     var innerDiv = document.createElement("div");
-    innerDiv.style.border = "1px solid black";
+  //  innerDiv.style.border = "1px solid black";
     // innerDiv.style.height = "20px";
-    innerDiv.style.display = "inline-block";
-    innerDiv.style.borderRadius = "5px";
-    innerDiv.style.backgroundColor = "#3498db";
+//    innerDiv.style.display = "inline-block";
+  //  innerDiv.style.borderRadius = "5px";
+  //  innerDiv.style.backgroundColor = "#3498db";
     innerDiv.style.color = "white";
-    innerDiv.style.padding = "5px";
+  //  innerDiv.style.padding = "5px";
     innerDiv.innerHTML = msg;
     div.style.textAlign = "right";
     document.getElementById(inside).appendChild(div);
