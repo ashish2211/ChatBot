@@ -8,7 +8,8 @@ var bot = new RiveScript();
 
 
 // Load an individual file.
-bot.loadFile("bot.rive", loading_done, loading_error);
+bot.loadFile("bot.rive").then(msg_sent);
+
 
 /*
 Load a list of Rivescript files all at once (the best alternative to load directory for the web!).
@@ -51,11 +52,12 @@ function msg_sent(){
         bot.sortReplies();
 
         // Now we are free to get a reply from the brain or the .rive file.
-        var reply = bot.reply("local-user", text);
+        bot.reply("local-user", text).then(function(reply){
+          // Show the bot message in the chatbox.
+          createBotMsg("msg_box", reply);
+          updateScroll();
+        });
 
-        // Show the bot message in the chatbox.
-        createBotMsg("msg_box", reply);
-        updateScroll();
     }
 }
 
