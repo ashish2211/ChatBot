@@ -1,83 +1,89 @@
 body{
-    background-color: #3498db;
+padding: 0;
+margin: 0;
+background: linear-gradient(to bottom, #3333ff 0%, #3366ff 100%);
+}
+canvas{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
 }
 
-p{
-    font-size: 50px;
-    font-family: 'Roboto';
-    margin: auto;
-    text-align: center;
-    color: white;
+#title_name{
+  height: 60;
+position: fixed;
+width: 100%;
+top: 26%;
+text-align: center;
+color: white;
+font-family:"Lucida Console", Monaco, monospace;
+font-size: 30px;
+animation-name: fade;
+animation-duration: 0.5s;
 }
 
 
-#main{
-    position: absolute;
-    style: block;
-    height: 60%;
-    width: 100%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #3498db;
+@keyframes fade {
+    0%   {top: 60%;  opacity: 0; }
+    100%  {top:26%;  opacity: 100; }
 }
+
+@keyframes wiggle {
+    0%   {left: 0.2%;}
+    50% {left: -0.2%;}
+    100%  {left:0.2%;}
+}
+
+@keyframes opac {
+    0%   {opacity: 0;}
+    50% { opacity: 100;}
+    100%  {opacity: 0;}
+}
+
 
 #msg_box{
-  height:90%;
-  overflow: auto;
-}
-
-
-#input_fields{
-  display: block;
-  margin: auto;
-  background-color: white;
-  border-radius: 40px;
-  padding: 10px;
-  width: 70px;
-  height: 50px;
-  line-height: 50px;
-  transition: 0.4s;
-}
-
-#input_fields:hover {
-  width:400px;
-align-items: center;
-}
-
-#input_fields:hover >   #text_field{
-  float: left;
-  width:80%;
-  transition: 0.4s;
-}
-
-#text_field{
-  border: none;
-  background: none;
+  position: fixed;
+  top: 30%;
+  left: 0%;
+  width: 100%;
+  height: 10%;
   outline: none;
-  padding: 0;
-  float: right;
-  color: black;
-  font-size: 16px;
-  line-height: 40px;
-  width: 0px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  font-size: 60px;
+  letter-spacing: 2px;
+
 }
 
-#send_btn{
-  display: inline-block;
-  margin: 0;
-  padding: 0.75rem 1rem;
-	border: 0;
-	border-radius: 0.317rem;
-background-color:white;
-	color: black;
-	text-decoration: none;
-	font-weight: 700;
-	font-size: 1rem;
-  line-height: 1.5;
-	font-family: "Helvetica Neue", Arial, sans-serif;
-	cursor: pointer;
-	-webkit-appearance: none;
-	-webkit-font-smoothing: antialiased;
-  float: right;
+
+#detect_input{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 280px;
+  height: 30px;
+  margin: -18px 0 0 -150px;
+  padding: 5px 10px;
+  outline: none;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 26px;
+  letter-spacing: 2px;
+  overflow:hidden;
+}
+
+
+
+::-webkit-input-placeholder{
+}
+:-moz-placeholder {
+}
+::-moz-placeholder{
+}
+:-ms-input-placeholder{
 }

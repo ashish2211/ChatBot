@@ -562,7 +562,7 @@
 - You have a particular person in mind, don't you?
 - Who do you think you are talking about?
 
-+ [*] my (mom|dad|mother|father|bro|brother|sis|sister|cousin|aunt|uncle) *
++ [*]  (mom|dad|mother|father|bro|brother|sis|sister|cousin|aunt|uncle) *
 - Tell me more about your family.
 - Who else in your family <star2>?
 - Your <star>?
@@ -625,3 +625,13 @@
 - Does this topic make you feel angry?
 - Is something making you feel angry?
 - Does using that kind of language make you feel better?
+
+
+
+
+
+
+
+
++ joke about *
+- <star4> ok
