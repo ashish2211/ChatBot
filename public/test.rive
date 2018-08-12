@@ -1,0 +1,36 @@
+! version = 2.0
+
+! var name     = Babita
+! var fullname = Babita Ji
+! var age      = 25
+
++ (hi|hello)
+-hello there
+-kaisa hai
+
++ (google|search|find) *
+- Google search: <a href="http://google.com/search?q=<star>">Click Here</a>
+
+
++ my name is*
+- <set name=<star1>>It's nice to meet you, <get name>.
+
+//+  name
+//- You are <get name>
+//* <get name> == undefined => <call>ss</call>You never told me your name.
+
++bol
+-<call>ss</call>
+
++[*](know|about) *
+-check_for_name <star2>
+
+
++[*](likes|like) *
+- check_Like <star2>
+
+
+>object ss javascript
+createBotMsg("dwa");
+console.log("wdaddwadawdawaaadadaaddw");
+<object
